@@ -1,0 +1,1919 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <ISO8601WeekNumbering_SP1 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='pre_processed_data' inline='true' name='federated.01i2ncb0a4wtp512rytk513nzz2z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pre_processed_data' name='textscan.0k93kbz0nxcb7d10qesdh0rc6w65'>
+            <connection class='textscan' directory='C:/Users/saita/OneDrive/Desktop/data-20230522T214314Z-001' filename='pre_processed_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0k93kbz0nxcb7d10qesdh0rc6w65' name='pre_processed_data.csv' table='[pre_processed_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='datetime' name='Published Date' ordinal='1' />
+            <column datatype='string' name='Account' ordinal='2' />
+            <column datatype='string' name='Account Type' ordinal='3' />
+            <column datatype='string' name='Campaign Name' ordinal='4' />
+            <column datatype='integer' name='Total Impressions' ordinal='5' />
+            <column datatype='integer' name='Total Engagements' ordinal='6' />
+            <column datatype='string' name='Media Type' ordinal='7' />
+            <column datatype='real' name='Engagement_Rate' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0k93kbz0nxcb7d10qesdh0rc6w65' name='pre_processed_data.csv' table='[pre_processed_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='datetime' name='Published Date' ordinal='1' />
+            <column datatype='string' name='Account' ordinal='2' />
+            <column datatype='string' name='Account Type' ordinal='3' />
+            <column datatype='string' name='Campaign Name' ordinal='4' />
+            <column datatype='integer' name='Total Impressions' ordinal='5' />
+            <column datatype='integer' name='Total Engagements' ordinal='6' />
+            <column datatype='string' name='Media Type' ordinal='7' />
+            <column datatype='real' name='Engagement_Rate' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pre_processed_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[pre_processed_data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_processed_data.csv_E5838C93E2594E99BC843934D8C70AB1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Published Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Published Date]</local-name>
+            <parent-name>[pre_processed_data.csv]</parent-name>
+            <remote-alias>Published Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_processed_data.csv_E5838C93E2594E99BC843934D8C70AB1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Account]</local-name>
+            <parent-name>[pre_processed_data.csv]</parent-name>
+            <remote-alias>Account</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_processed_data.csv_E5838C93E2594E99BC843934D8C70AB1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Account Type]</local-name>
+            <parent-name>[pre_processed_data.csv]</parent-name>
+            <remote-alias>Account Type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_processed_data.csv_E5838C93E2594E99BC843934D8C70AB1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Campaign Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Campaign Name]</local-name>
+            <parent-name>[pre_processed_data.csv]</parent-name>
+            <remote-alias>Campaign Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_processed_data.csv_E5838C93E2594E99BC843934D8C70AB1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Impressions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Impressions]</local-name>
+            <parent-name>[pre_processed_data.csv]</parent-name>
+            <remote-alias>Total Impressions</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_processed_data.csv_E5838C93E2594E99BC843934D8C70AB1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Engagements</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Engagements]</local-name>
+            <parent-name>[pre_processed_data.csv]</parent-name>
+            <remote-alias>Total Engagements</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_processed_data.csv_E5838C93E2594E99BC843934D8C70AB1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Media Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Media Type]</local-name>
+            <parent-name>[pre_processed_data.csv]</parent-name>
+            <remote-alias>Media Type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_processed_data.csv_E5838C93E2594E99BC843934D8C70AB1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engagement_Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Engagement_Rate]</local-name>
+            <parent-name>[pre_processed_data.csv]</parent-name>
+            <remote-alias>Engagement_Rate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_processed_data.csv_E5838C93E2594E99BC843934D8C70AB1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Engagement Rate (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[Engagement_Rate]' peg='0' size='0.68' />
+      </column>
+      <column caption='Engagement Rate' datatype='real' name='[Engagement_Rate]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Engagements]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Impressions]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='pre_processed_data.csv' datatype='table' name='[__tableau_internal_object_id__].[pre_processed_data.csv_E5838C93E2594E99BC843934D8C70AB1]' role='measure' type='quantitative' />
+      <column-instance column='[Engagement_Rate]' derivation='Avg' name='[avg:Engagement_Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Engagements]' derivation='Avg' name='[avg:Total Engagements:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Impressions]' derivation='Avg' name='[avg:Total Impressions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Engagement_Rate]' derivation='Count' name='[cnt:Engagement_Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Engagement_Rate]' derivation='Sum' name='[sum:Engagement_Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Engagements]' derivation='Sum' name='[sum:Total Engagements:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Impressions]' derivation='Sum' name='[sum:Total Impressions:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.01i2ncb0a4wtp512rytk513nzz2z].[avg:Total Engagements:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.01i2ncb0a4wtp512rytk513nzz2z].[sum:Total Engagements:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.01i2ncb0a4wtp512rytk513nzz2z].[cnt:Engagement_Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.01i2ncb0a4wtp512rytk513nzz2z].[sum:Engagement_Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.01i2ncb0a4wtp512rytk513nzz2z].[avg:Engagement_Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.01i2ncb0a4wtp512rytk513nzz2z].[avg:Total Impressions:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.01i2ncb0a4wtp512rytk513nzz2z].[sum:Total Impressions:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='pre_processed_data.csv' id='pre_processed_data.csv_E5838C93E2594E99BC843934D8C70AB1'>
+            <properties context=''>
+              <relation connection='textscan.0k93kbz0nxcb7d10qesdh0rc6w65' name='pre_processed_data.csv' table='[pre_processed_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='datetime' name='Published Date' ordinal='1' />
+                  <column datatype='string' name='Account' ordinal='2' />
+                  <column datatype='string' name='Account Type' ordinal='3' />
+                  <column datatype='string' name='Campaign Name' ordinal='4' />
+                  <column datatype='integer' name='Total Impressions' ordinal='5' />
+                  <column datatype='integer' name='Total Engagements' ordinal='6' />
+                  <column datatype='string' name='Media Type' ordinal='7' />
+                  <column datatype='real' name='Engagement_Rate' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='date_wise' inline='true' name='federated.0mpqnvg1otncbh11y9ahl043o2le' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='date_wise' name='textscan.1acbj8a12empa41ga35n009vu6q8'>
+            <connection class='textscan' directory='C:/Users/saita/OneDrive/Desktop/data-20230522T214314Z-001' filename='date_wise.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1acbj8a12empa41ga35n009vu6q8' name='date_wise.csv' table='[date_wise#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Date' ordinal='0' />
+            <column datatype='integer' name='Month' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='integer' name='Total Impressions' ordinal='3' />
+            <column datatype='integer' name='Total Engagements' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1acbj8a12empa41ga35n009vu6q8' name='date_wise.csv' table='[date_wise#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Date' ordinal='0' />
+            <column datatype='integer' name='Month' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='integer' name='Total Impressions' ordinal='3' />
+            <column datatype='integer' name='Total Engagements' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[date_wise.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[date_wise.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[date_wise.csv_4D95E8DB99854E6BAB71863816311A3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[date_wise.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[date_wise.csv_4D95E8DB99854E6BAB71863816311A3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[date_wise.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[date_wise.csv_4D95E8DB99854E6BAB71863816311A3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Impressions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Impressions]</local-name>
+            <parent-name>[date_wise.csv]</parent-name>
+            <remote-alias>Total Impressions</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[date_wise.csv_4D95E8DB99854E6BAB71863816311A3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Engagements</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Engagements]</local-name>
+            <parent-name>[date_wise.csv]</parent-name>
+            <remote-alias>Total Engagements</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[date_wise.csv_4D95E8DB99854E6BAB71863816311A3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Published_date' datatype='date' datatype-customized='true' name='[Calculation_994451122316275714]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(STR([Month])+&apos;-&apos;+STR([Date])+&apos;-&apos;+STR([Year]))' />
+      </column>
+      <column caption='Engagement_Rate' datatype='real' name='[Calculation_994451122316775427]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Total Engagements]/[Total Impressions]' />
+      </column>
+      <column caption='WeekDay' datatype='string' name='[Calculation_994451122439749641]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;,[Calculation_994451122316275714])' />
+      </column>
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Total Engagements]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Impressions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='date_wise.csv' datatype='table' name='[__tableau_internal_object_id__].[date_wise.csv_4D95E8DB99854E6BAB71863816311A3A]' role='measure' type='quantitative' />
+      <column-instance column='[Total Engagements]' derivation='Attribute' name='[attr:Total Engagements:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Impressions]' derivation='Attribute' name='[attr:Total Impressions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Engagements]' derivation='Avg' name='[avg:Total Engagements:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Impressions]' derivation='Avg' name='[avg:Total Impressions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_994451122316275714]' derivation='ISO-Weekday' name='[iwd:Calculation_994451122316275714:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_994451122316775427]' derivation='None' name='[none:Calculation_994451122316775427:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_994451122439749641]' derivation='None' name='[none:Calculation_994451122439749641:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Total Engagements]' derivation='None' name='[none:Total Engagements:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Impressions]' derivation='None' name='[none:Total Impressions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Engagements]' derivation='Sum' name='[sum:Total Engagements:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Impressions]' derivation='Sum' name='[sum:Total Impressions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_994451122316275714]' derivation='Weekday' name='[wd:Calculation_994451122316275714:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Engagement_Rate)' hidden='true' name='[Action (Engagement_Rate)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Calculation_994451122316775427:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Engagement_Rate,WEEKDAY(Published_date))' hidden='true' name='[Action (Engagement_Rate,WEEKDAY(Published_date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Calculation_994451122316775427:ok]' />
+          <groupfilter function='level-members' level='[wd:Calculation_994451122316275714:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Published_date,WEEKDAY(Published_date))' hidden='true' name='[Action (Published_date,WEEKDAY(Published_date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_994451122316275714]' />
+          <groupfilter function='level-members' level='[wd:Calculation_994451122316275714:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (WEEKDAY(Published_date))' hidden='true' name='[Action (WEEKDAY(Published_date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[wd:Calculation_994451122316275714:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (WeekDay)' hidden='true' name='[Action (WeekDay)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_994451122439749641]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Total Engagements:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Total Engagements:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Total Engagements:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0mpqnvg1otncbh11y9ahl043o2le]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Total Impressions:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Total Impressions:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Total Impressions:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[wd:Calculation_994451122316275714:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2023</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>7</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[iwd:Calculation_994451122316275714:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2023</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>7</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_994451122439749641:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sunday&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Thursday&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Wednesday&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Saturday&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tuesday&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Friday&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Monday&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='date_wise.csv' id='date_wise.csv_4D95E8DB99854E6BAB71863816311A3A'>
+            <properties context=''>
+              <relation connection='textscan.1acbj8a12empa41ga35n009vu6q8' name='date_wise.csv' table='[date_wise#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Date' ordinal='0' />
+                  <column datatype='integer' name='Month' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='integer' name='Total Impressions' ordinal='3' />
+                  <column datatype='integer' name='Total Engagements' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='hour_wise' inline='true' name='federated.15i2ky11j0pdrg14ehvyi1cj8wpd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hour_wise' name='textscan.1eplxhi0yy1jor1a1e5wh1o7ht6t'>
+            <connection class='textscan' directory='C:/Users/saita/OneDrive/Desktop/data-20230522T214314Z-001' filename='hour_wise.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1eplxhi0yy1jor1a1e5wh1o7ht6t' name='hour_wise.csv' table='[hour_wise#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Hour' ordinal='0' />
+            <column datatype='integer' name='Total Impressions' ordinal='1' />
+            <column datatype='integer' name='Total Engagements' ordinal='2' />
+            <column datatype='real' name='EngagementRate' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1eplxhi0yy1jor1a1e5wh1o7ht6t' name='hour_wise.csv' table='[hour_wise#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Hour' ordinal='0' />
+            <column datatype='integer' name='Total Impressions' ordinal='1' />
+            <column datatype='integer' name='Total Engagements' ordinal='2' />
+            <column datatype='real' name='EngagementRate' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hour_wise.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hour]</local-name>
+            <parent-name>[hour_wise.csv]</parent-name>
+            <remote-alias>Hour</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour_wise.csv_3977EE8913E04A48A040E05DF5F65ED0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Impressions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Impressions]</local-name>
+            <parent-name>[hour_wise.csv]</parent-name>
+            <remote-alias>Total Impressions</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour_wise.csv_3977EE8913E04A48A040E05DF5F65ED0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Engagements</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Engagements]</local-name>
+            <parent-name>[hour_wise.csv]</parent-name>
+            <remote-alias>Total Engagements</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour_wise.csv_3977EE8913E04A48A040E05DF5F65ED0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EngagementRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EngagementRate]</local-name>
+            <parent-name>[hour_wise.csv]</parent-name>
+            <remote-alias>EngagementRate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour_wise.csv_3977EE8913E04A48A040E05DF5F65ED0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[EngagementRate]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Engagements]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Impressions]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='hour_wise.csv' datatype='table' name='[__tableau_internal_object_id__].[hour_wise.csv_3977EE8913E04A48A040E05DF5F65ED0]' role='measure' type='quantitative' />
+      <column-instance column='[EngagementRate]' derivation='Sum' name='[sum:EngagementRate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Engagements]' derivation='Sum' name='[sum:Total Engagements:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Impressions]' derivation='Sum' name='[sum:Total Impressions:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Engagements:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:EngagementRate:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='hour_wise.csv' id='hour_wise.csv_3977EE8913E04A48A040E05DF5F65ED0'>
+            <properties context=''>
+              <relation connection='textscan.1eplxhi0yy1jor1a1e5wh1o7ht6t' name='hour_wise.csv' table='[hour_wise#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Hour' ordinal='0' />
+                  <column datatype='integer' name='Total Impressions' ordinal='1' />
+                  <column datatype='integer' name='Total Engagements' ordinal='2' />
+                  <column datatype='real' name='EngagementRate' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter1' name='[Action1_311FD52E78F146748CEA337F6328DB11]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Sheet 5' />
+      <link caption='Filter1' delimiter=',' escape='\' expression='tsl:Dashboard%202?%5Bfederated.0mpqnvg1otncbh11y9ahl043o2le%5D.%5BCalculation_994451122439749641%5D~s0=&lt;[federated.0mpqnvg1otncbh11y9ahl043o2le].[Calculation_994451122439749641]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Sheet 6 (2)' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Highlight2' name='[Action3_52DFEFBFFFA243ECAB285C15151E1CB9]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Sheet 5' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Sheet 6' />
+        <param name='field-captions' value='WeekDay' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Highlight1' name='[Action3_D3A43C5FB40143B094F4F41DC70ED8EA]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Sheet 5' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Sheet 6' />
+        <param name='field-captions' value='WeekDay' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action4_B7BA4D75A6F24F3E9D2E2D0F4BE51E1C]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Sheet 6 (2)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='date_wise' name='federated.0mpqnvg1otncbh11y9ahl043o2le' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0mpqnvg1otncbh11y9ahl043o2le'>
+      <column caption='WeekDay' datatype='string' name='[Calculation_994451122439749641]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;,[Calculation_994451122316275714])' />
+      </column>
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pre_processed_data' name='federated.01i2ncb0a4wtp512rytk513nzz2z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01i2ncb0a4wtp512rytk513nzz2z'>
+            <column aggregation='None' datatype='integer' name='[Engagement Rate (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-1' formula='[Engagement_Rate]' peg='0' size='0.68' />
+            </column>
+            <column caption='Engagement Rate' datatype='real' name='[Engagement_Rate]' role='measure' type='quantitative' />
+            <column-instance column='[Engagement_Rate]' derivation='Count' name='[cnt:Engagement_Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Engagement Rate (bin)]' derivation='None' name='[none:Engagement Rate (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.01i2ncb0a4wtp512rytk513nzz2z].[cnt:Engagement_Rate:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01i2ncb0a4wtp512rytk513nzz2z].[cnt:Engagement_Rate:qk]</rows>
+        <cols>[federated.01i2ncb0a4wtp512rytk513nzz2z].[none:Engagement Rate (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.01i2ncb0a4wtp512rytk513nzz2z].[none:Engagement Rate (bin):qk]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{A92FE31A-1585-4021-A673-F0BF944C7B03}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Day Wise Engagements vs Impressions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='date_wise' name='federated.0mpqnvg1otncbh11y9ahl043o2le' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mpqnvg1otncbh11y9ahl043o2le'>
+            <column caption='Published_date' datatype='date' datatype-customized='true' name='[Calculation_994451122316275714]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(STR([Month])+&apos;-&apos;+STR([Date])+&apos;-&apos;+STR([Year]))' />
+            </column>
+            <column caption='Engagement_Rate' datatype='real' name='[Calculation_994451122316775427]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Total Engagements]/[Total Impressions]' />
+            </column>
+            <column datatype='integer' name='[Date]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Total Engagements]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Impressions]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_994451122316275714]' derivation='Attribute' name='[attr:Calculation_994451122316275714:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Total Engagements]' derivation='Avg' name='[avg:Total Engagements:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Impressions]' derivation='Avg' name='[avg:Total Impressions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_994451122316275714]' derivation='None' name='[none:Calculation_994451122316275714:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_994451122316775427]' derivation='Sum' name='[sum:Calculation_994451122316775427:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0mpqnvg1otncbh11y9ahl043o2le].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]' field-type='quantitative' fold='true' max='1000000.998644' min='-11926.989759492304' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk]' scope='rows' value='Total Impressions' />
+            <format attr='width' field='[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk]' value='125' />
+            <format attr='width' field='[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]' value='125' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]' symmetric='false' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d8d8d8</color>
+                <color>#c0c0c0</color>
+                <color>#a8a8a8</color>
+                <color>#909090</color>
+                <color>#787878</color>
+                <color>#606060</color>
+                <color>#484848</color>
+                <color>#303030</color>
+                <color>#181818</color>
+                <color>#000000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dashed' />
+            <format attr='stroke-color' id='refline1' value='#000000' />
+            <format attr='stroke-size' id='refline1' value='3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316275714:ok]' />
+              <tooltip column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='8'>Date:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316275714:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='8'>Avg. Total Impressions:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='8'>Engagement_Rate:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='8'>Avg. Total Engagements:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]' />
+              <tooltip column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316275714:ok]' />
+              <tooltip column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]' />
+              <text column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='8'>Date:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316275714:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='8'>Avg. Total Impressions:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='8'>Engagement_Rate:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='8'>Avg. Total Engagements:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[:Measure Names]' />
+              <tooltip column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316275714:ok]' />
+              <tooltip column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='8'>Date:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316275714:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='8'>Avg. Total Impressions:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='8'>Engagement_Rate:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='8'>Avg. Total Engagements:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk] + [federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk])</rows>
+        <cols>[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122316275714:qk]</cols>
+        <annotations>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='291'>
+            <formatted-text>
+              <run fontalignment='0' fontcolor='#787878'>Published_date: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316275714:ok]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Avg. Total Engagements: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Avg. Total Impressions: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Engagement_Rate: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122316275714:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]</field>
+                      <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk]</field>
+                      <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122316275714:qk]</field>
+                      <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]</field>
+                      <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316275714:ok]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>87886.0</value>
+                    <value>570564.0</value>
+                    <value>#2023-01-29#</value>
+                    <value>0.15403355276533395</value>
+                    <value>#2023-01-29#</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='45' y='-485' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Published_date: </run>
+              <run bold='true'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316275714:ok]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Avg. Total Engagements: </run>
+              <run bold='true'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Avg. Total Impressions: </run>
+              <run bold='true'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Engagement_Rate: </run>
+              <run bold='true'><![CDATA[<[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122316275714:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Engagements:qk]</field>
+                      <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[avg:Total Impressions:qk]</field>
+                      <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122316275714:qk]</field>
+                      <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]</field>
+                      <field>[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316275714:ok]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>227446.0</value>
+                    <value>2065357.0</value>
+                    <value>#2023-03-03#</value>
+                    <value>0.11012430296554059</value>
+                    <value>#2023-03-03#</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='141' y='-359' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{B6D4C5FC-D3BC-4921-B458-9BCA0B1B8F61}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='date_wise' name='federated.0mpqnvg1otncbh11y9ahl043o2le' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mpqnvg1otncbh11y9ahl043o2le'>
+            <column caption='Published_date' datatype='date' datatype-customized='true' name='[Calculation_994451122316275714]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(STR([Month])+&apos;-&apos;+STR([Date])+&apos;-&apos;+STR([Year]))' />
+            </column>
+            <column caption='Engagement_Rate' datatype='real' name='[Calculation_994451122316775427]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Total Engagements]/[Total Impressions]' />
+            </column>
+            <column caption='WeekDay' datatype='string' name='[Calculation_994451122439749641]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;,[Calculation_994451122316275714])' />
+            </column>
+            <column datatype='integer' name='[Date]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Total Engagements]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Impressions]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_994451122316775427]' derivation='Attribute' name='[attr:Calculation_994451122316775427:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_994451122439749641]' derivation='Attribute' name='[attr:Calculation_994451122439749641:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_994451122316275714]' derivation='None' name='[none:Calculation_994451122316275714:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_994451122439749641]' derivation='None' name='[none:Calculation_994451122439749641:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[Action (WeekDay)]'>
+            <groupfilter function='level-members' level='[Calculation_994451122439749641]' user:ui-action-filter='[Action4_B7BA4D75A6F24F3E9D2E2D0F4BE51E1C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mpqnvg1otncbh11y9ahl043o2le].[Action (WeekDay)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316775427:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000ad' />
+            <format attr='fill-above' id='refline0' value='#d7e9ff' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122439749641:nk]' />
+              <size column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316775427:qk]' />
+              <tooltip column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122439749641:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316775427:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' scope='per-pane' value='0.0469' value-column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316775427:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run>Day : &lt;</run>
+                <run>[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122439749641:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='2.6408839225769043' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mpqnvg1otncbh11y9ahl043o2le].[attr:Calculation_994451122316775427:qk]</rows>
+        <cols>[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122316275714:qk]</cols>
+      </table>
+      <simple-id uuid='{BA4AEB00-DB0C-415F-BFF3-4636A88EE0F5}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Number of times Engagement Rate greater than average</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='date_wise' name='federated.0mpqnvg1otncbh11y9ahl043o2le' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mpqnvg1otncbh11y9ahl043o2le'>
+            <column caption='Published_date' datatype='date' datatype-customized='true' name='[Calculation_994451122316275714]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(STR([Month])+&apos;-&apos;+STR([Date])+&apos;-&apos;+STR([Year]))' />
+            </column>
+            <column caption='Engagement_Rate' datatype='real' name='[Calculation_994451122316775427]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Total Engagements]/[Total Impressions]' />
+            </column>
+            <column caption='WeekDay' datatype='string' name='[Calculation_994451122439749641]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;,[Calculation_994451122316275714])' />
+            </column>
+            <column datatype='integer' name='[Date]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Total Engagements]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Impressions]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_994451122316775427]' derivation='Count' name='[cnt:Calculation_994451122316775427:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_994451122316775427]' derivation='None' name='[none:Calculation_994451122316775427:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[Action (WeekDay)]'>
+            <groupfilter function='level-members' level='[Calculation_994451122439749641]' user:ui-action-filter='[Action1_311FD52E78F146748CEA337F6328DB11]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122316775427:qk]' included-values='in-range'>
+            <min>0.0469</min>
+          </filter>
+          <slices>
+            <column>[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122316775427:qk]</column>
+            <column>[federated.0mpqnvg1otncbh11y9ahl043o2le].[Action (WeekDay)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='15' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[cnt:Calculation_994451122316775427:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6C7594FD-1A70-4072-95F2-225FAD274456}' />
+    </worksheet>
+    <worksheet name='Sheet 6 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Median Engagement Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='date_wise' name='federated.0mpqnvg1otncbh11y9ahl043o2le' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mpqnvg1otncbh11y9ahl043o2le'>
+            <column caption='Published_date' datatype='date' datatype-customized='true' name='[Calculation_994451122316275714]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(STR([Month])+&apos;-&apos;+STR([Date])+&apos;-&apos;+STR([Year]))' />
+            </column>
+            <column caption='Engagement_Rate' datatype='real' name='[Calculation_994451122316775427]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Total Engagements]/[Total Impressions]' />
+            </column>
+            <column caption='WeekDay' datatype='string' name='[Calculation_994451122439749641]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;,[Calculation_994451122316275714])' />
+            </column>
+            <column datatype='integer' name='[Date]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Total Engagements]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Impressions]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_994451122316775427]' derivation='Median' name='[med:Calculation_994451122316775427:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_994451122439749641]' derivation='None' name='[none:Calculation_994451122439749641:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0mpqnvg1otncbh11y9ahl043o2le].[med:Calculation_994451122316775427:qk]' value='p0.000%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[med:Calculation_994451122316775427:qk]' />
+              <text column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122439749641:nk]' />
+              <text column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[med:Calculation_994451122316775427:qk]' />
+              <color column='[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122439749641:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6BFED0F3-A91D-48DC-9CCA-5F5604372802}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour_wise' name='federated.15i2ky11j0pdrg14ehvyi1cj8wpd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15i2ky11j0pdrg14ehvyi1cj8wpd'>
+            <column datatype='real' name='[EngagementRate]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Hour]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Engagements]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Impressions]' role='measure' type='quantitative' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EngagementRate]' derivation='Sum' name='[sum:EngagementRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Engagements]' derivation='Sum' name='[sum:Total Engagements:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Impressions]' derivation='Sum' name='[sum:Total Impressions:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk]' field-type='quantitative' max='5155356' min='-213271' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]' field-type='quantitative' max='25' min='0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:EngagementRate:qk]' field-type='quantitative' fold='true' max='20.0' min='-0.48144184064789625' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[:Measure Names]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='true' y-axis='true' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:EngagementRate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[:Measure Names]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='true' y-axis='true' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk] + [federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:EngagementRate:qk])</rows>
+        <cols>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontalignment='0' fontcolor='#787878'>Hour: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Total Impressions: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]</field>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk]</field>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[:Measure Names]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>9</value>
+                    <value>4932755</value>
+                    <value>&quot;[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk]&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontalignment='0' fontcolor='#787878'>Hour: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Total Engagements: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Engagements:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Engagements:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]</field>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Engagements:qk]</field>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[:Measure Names]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>9</value>
+                    <value>351271</value>
+                    <value>&quot;[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Engagements:qk]&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Hour: </run>
+              <run bold='true'><![CDATA[<[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Total Impressions: </run>
+              <run bold='true'><![CDATA[<[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]</field>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk]</field>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[:Measure Names]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>22</value>
+                    <value>4300</value>
+                    <value>&quot;[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Impressions:qk]&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='10' y='-124' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Hour: </run>
+              <run bold='true'><![CDATA[<[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Total Engagements: </run>
+              <run bold='true'><![CDATA[<[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Engagements:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Engagements:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[none:Hour:qk]</field>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Engagements:qk]</field>
+                      <field>[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[:Measure Names]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>22</value>
+                    <value>115</value>
+                    <value>&quot;[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[sum:Total Engagements:qk]&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='5' y='-294' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{00C2A19A-482E-4FA6-9B25-C91811A9E8C1}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pre_processed_data' name='federated.01i2ncb0a4wtp512rytk513nzz2z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01i2ncb0a4wtp512rytk513nzz2z'>
+            <column datatype='string' name='[Campaign Name]' role='dimension' type='nominal' />
+            <column caption='Engagement Rate' datatype='real' name='[Engagement_Rate]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Media Type]' role='dimension' type='nominal' />
+            <column-instance column='[Engagement_Rate]' derivation='Avg' name='[avg:Engagement_Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Campaign Name]' derivation='None' name='[none:Campaign Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Media Type]' derivation='None' name='[none:Media Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.01i2ncb0a4wtp512rytk513nzz2z].[none:Media Type:nk]' value='52' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01i2ncb0a4wtp512rytk513nzz2z].[none:Media Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01i2ncb0a4wtp512rytk513nzz2z].[avg:Engagement_Rate:qk]</rows>
+        <cols>([federated.01i2ncb0a4wtp512rytk513nzz2z].[none:Campaign Name:nk] / [federated.01i2ncb0a4wtp512rytk513nzz2z].[none:Media Type:nk])</cols>
+      </table>
+      <simple-id uuid='{FB6706B9-F84D-42B9-AB56-316A79548849}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98244' id='7' param='horz' type-v2='layout-flow' w='98938' x='531' y='878'>
+            <zone h='98244' id='5' type-v2='layout-basic' w='98938' x='531' y='878'>
+              <zone h='98244' id='3' name='Sheet 4' w='98938' x='531' y='878'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone fixed-size='156' h='12075' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16467' x='9429' y='14050'>
+          <zone h='5598' id='8' name='Sheet 4' pane-specification-id='2' param='[federated.0mpqnvg1otncbh11y9ahl043o2le].[:Measure Names]' type-v2='color' w='16467' x='9429' y='14050'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='6477' id='9' name='Sheet 4' pane-specification-id='1' param='[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]' type-v2='color' w='16467' x='9429' y='19648'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98244' id='30' param='vert' type-v2='layout-flow' w='98938' x='531' y='878'>
+                <zone fixed-size='280' h='98244' id='3' is-fixed='true' name='Sheet 4' w='98938' x='531' y='878'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5598' id='8' name='Sheet 4' pane-specification-id='2' param='[federated.0mpqnvg1otncbh11y9ahl043o2le].[:Measure Names]' type-v2='color' w='16467' x='9429' y='14050'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6477' id='9' name='Sheet 4' pane-specification-id='1' param='[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]' type-v2='color' w='16467' x='9429' y='19648'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AAAA2B7A-1094-409E-8DB6-4EFF466E63CA}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98244' id='7' param='horz' type-v2='layout-flow' w='98938' x='531' y='878'>
+            <zone h='98244' id='5' type-v2='layout-basic' w='98938' x='531' y='878' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='85000' id='15' name='Sheet 5' show-title='false' w='60200' x='1000' y='12500' />
+        <zone forceUpdate='true' h='15250' id='10' type-v2='text' w='82600' x='1000' y='1250'>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='16'>More than Average Engagement Rate Days</run>
+          </formatted-text>
+        </zone>
+        <zone h='4940' id='9' name='Sheet 6' show-title='false' w='8101' x='37849' y='6915'>
+          <layout-cache fixed-size-h='35' type-h='fixed' type-w='fixed' />
+        </zone>
+        <zone h='55193' id='16' name='Sheet 6 (2)' w='37170' x='61747' y='12602' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98244' id='29' param='vert' type-v2='layout-flow' w='98938' x='531' y='878'>
+                <zone forceUpdate='true' h='15250' id='10' type-v2='text' w='82600' x='1000' y='1250'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='16'>More than Average Engagement Rate Days</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='40' h='4940' id='9' is-fixed='true' name='Sheet 6' show-title='false' w='8101' x='37849' y='6915'>
+                  <layout-cache fixed-size-h='35' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='85000' id='15' is-fixed='true' name='Sheet 5' show-title='false' w='60200' x='1000' y='12500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55193' id='16' is-fixed='true' name='Sheet 6 (2)' w='37170' x='61747' y='12602'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0E588989-609D-4476-8194-F2BF0EA5A254}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01i2ncb0a4wtp512rytk513nzz2z].[cnt:Engagement_Rate:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{34A7B8AD-9D35-4DED-A162-8771A0F03254}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0mpqnvg1otncbh11y9ahl043o2le].[:Measure Names]' type='color' />
+            <card pane-specification-id='1' param='[federated.0mpqnvg1otncbh11y9ahl043o2le].[sum:Calculation_994451122316775427:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{021F85D2-C2C2-4DD0-9F2D-26B5CA2DA53E}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122439749641:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EB62D5D4-F66F-49EE-8E17-952C06FE653D}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{915AD272-7AC6-4803-AD15-7726DBD55AC7}' />
+    </window>
+    <window class='worksheet' name='Sheet 6 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mpqnvg1otncbh11y9ahl043o2le].[none:Calculation_994451122439749641:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{4FF70E5B-4900-467E-B1AF-C88850259153}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.15i2ky11j0pdrg14ehvyi1cj8wpd].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8F0074FE-9C30-4F79-B74D-AB11FA818DCD}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{2C8788A3-D45D-4E44-B4C9-1E9BD421EF50}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6' />
+        <viewpoint name='Sheet 6 (2)' />
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{FEB79FCF-B50B-44B4-B587-C896C034AD33}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01i2ncb0a4wtp512rytk513nzz2z].[none:Media Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D7FC7E75-92B9-4A73-B2BB-4DDDC2388D9C}' />
+    </window>
+  </windows>
+</workbook>
